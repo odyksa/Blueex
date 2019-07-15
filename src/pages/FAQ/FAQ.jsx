@@ -6,9 +6,9 @@ import './FAQ.css';
 class FAQ extends Component {
     render() {
         return (
-            <Container>
+            <main className="faq">
                 FAQ
-            </Container>
+            </main>
         );
     }
 }

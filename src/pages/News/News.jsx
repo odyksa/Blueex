@@ -6,9 +6,9 @@ import './News.css';
 class News extends Component {
     render() {
         return (
-            <Container>
+            <main className="news">
                 News
-            </Container>
+            </main>
         );
     }
 }

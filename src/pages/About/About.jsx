@@ -6,9 +6,9 @@ import './About.css';
 class About extends Component {
     render() {
         return (
-            <Container>
+            <main className="about">
                 About
-            </Container>
+            </main>
         );
     }
 }
