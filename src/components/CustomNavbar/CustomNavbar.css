@@ -1,0 +1,11 @@
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.navbar-nav {
+    align-items: center;
+}
