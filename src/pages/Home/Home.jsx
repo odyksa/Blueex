@@ -25,7 +25,7 @@ class Home extends Component {
                         </Col>
                         <Col xs={12} sm={4} className="person">
                             <Image roundedCircle src="assets/person-2.jpg" fluid />
-                            <h3 className="person-name">Nina Simone</h3>
+                            <h3 className="person-name">Oswald Retenburg</h3>
                             <p className="person-text">Mauris et quam dolor. Nulla ut posuere metus. Aenean id nisl eu velit semper accumsan. In nec varius leo. Praesent aliquet turpis vitae tortor lobortis pretium.</p>
                         </Col>
                         <Col xs={12} sm={4} className="person">
