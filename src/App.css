@@ -5,3 +5,12 @@
 .section-title {
     margin-bottom: 30px;
 }
+
+.section-title:after {
+    content: '';
+    display: block;
+    margin: 15px  auto 0 auto;
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+}

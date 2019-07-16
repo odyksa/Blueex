@@ -6,7 +6,7 @@ import './CustomNavbar.css';
 class CustomNavbar extends Component {
     render() {
         return (
-            <Navbar collapseOnSelect expand="lg" bg="light" className="mb-3">
+            <Navbar collapseOnSelect expand="lg" bg="light">
                 <Container>
                     <Link to="/" className="logo">
                         <Image src="assets/logo.png"/>
