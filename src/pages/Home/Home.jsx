@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
         return (
             <main className="home">
-                <Image src="assets/home-bg.jpg" fluid className="mb-4" />
+                <Image src="assets/home-bg.jpg" fluid className="mb-4 zoom" />
 
                 {/* jumbotron */}
                 <section className="section jumbotron-wrap">
@@ -15,7 +15,7 @@ class Home extends Component {
                         <Jumbotron>
                             <hgroup>
                                 <h1 className="text-uppercase mb-4">Welcome to Altmetric Co</h1>
-                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore excepturi nesciunt repellat, atque at tenetur.</h2>
+                                <h2 className="jumbotron-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore excepturi nesciunt repellat, atque at tenetur.</h2>
                             </hgroup>
                             <Link to="/about">
                                 <Button variant="primary" className="mt-2">About</Button>
@@ -27,23 +27,56 @@ class Home extends Component {
 
                 {/* team */}
                 <section className="section team">
-                    <h3 className="text-center section-title">Our team</h3>
+                    <h3 className="text-center section-title section-title-border">Our team</h3>
                     <Container>
                         <Row className="text-center">
                             <Col xs={12} sm={4} className="person">
                                 <Image roundedCircle src="assets/person-1.jpg" fluid />
                                 <h4 className="person-name mt-3">Frank Duval</h4>
                                 <p className="person-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
+                                <div className="person-social-links text-center">
+                                    <a href="#">
+                                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" className="ml-2 mr-2">
+                                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </Col>
                             <Col xs={12} sm={4} className="person">
                                 <Image roundedCircle src="assets/person-2.jpg" fluid />
                                 <h4 className="person-name mt-3">Oswald Retenburg</h4>
                                 <p className="person-text">Mauris et quam dolor. Nulla ut posuere metus. Aenean id nisl eu velit semper accumsan. In nec varius leo. Praesent aliquet turpis vitae tortor lobortis pretium.</p>
+                                <div className="person-social-links text-center">
+                                    <a href="#">
+                                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" className="ml-2 mr-2">
+                                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </Col>
                             <Col xs={12} sm={4} className="person">
                                 <Image roundedCircle src="assets/person-3.jpg" fluid />
                                 <h4 className="person-name mt-3">Peter Jackson</h4>
                                 <p className="person-text">Aliquam erat volutpat. Suspendisse vehicula a purus vel blandit. Sed erat nulla, eleifend in sem nec, luctus commodo dolor. Nunc finibus, turpis non bibendum iaculis.</p>
+                                <div className="person-social-links text-center">
+                                    <a href="#">
+                                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" className="ml-2 mr-2">
+                                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </Col>
                         </Row>
                     </Container>
@@ -94,7 +127,7 @@ class Home extends Component {
 
                 {/* advantages */}
                 <section className="section advantages">
-                    <h3 className="text-center section-title">Our advantages</h3>
+                    <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
                             <Col xs={12} sm={6} lg={3} className="advantage-item text-center">
@@ -129,7 +162,41 @@ class Home extends Component {
                     </Container>
                 </section>
                 {/* /advantages */}
-            </main>
+
+                {/* subscribe */}
+                <section className="section subscribe">
+                    <h3 className="text-center section-title">Subscribe to the newsletter for more updates</h3>
+                    <Container>
+                        <Row>
+                            <Col lg={{ span: 8, offset: 2 }} >
+                                <form action="" className="subscribe-form d-flex justify-content-center lg-10">
+                                    <input type="email" name="email" placeholder="Your email adress" className="subscribe-form-email" />
+                                    <button type="submit" className="subscribe-form-btn">Send</button>
+                                </form>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /subscribe */}
+
+                {/* odio */}
+                <section className="section odio">
+                    <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
+                    <Container>
+                        <Row>
+                            <Col lg={5} md={6}>
+                                <div className="odio-img">
+                                    <Image src="assets/odio.jpg" />
+                                </div>
+                            </Col>
+                            <Col lg={7} md={6}>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /odio */}
+            </main >
         );
     }
 }
