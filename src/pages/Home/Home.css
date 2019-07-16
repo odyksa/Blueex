@@ -1,28 +1,37 @@
 .jumbotron-subtitle {
     color: #5e5b60f2;
 }
-.person {
+.person img {
     transition: opacity 0.5s ease-out;
 }
-.person:hover {
+.person img:hover {
     opacity: 0.65;
 }
 
 .advantage-item {
-    transition: opacity 0.5s ease-out;
+    transition: all 0.5s ease-out;
     position: relative;
 }
-.advantage-item:hover {
-    opacity: 0.65;
-}
 
-.advantage-item:hover:after {
+.advantage-item:after {
     content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 2px;
     background: #007bff;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.advantage-item:hover {
+    opacity: 0.65;
+    color: #007bff;
+}
+
+.advantage-item:hover:after {
+    opacity: 1;
+    
 }
 
 .advantage-item-icon .fa {
@@ -97,4 +106,15 @@
 
 .odio-img img:hover {
     transform: scale(1.03);
+}
+
+.odio ul {
+    margin: 40px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.odio .fa {
+    color: #007bff;
+    font-size: 25px;
 }

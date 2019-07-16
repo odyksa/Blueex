@@ -190,7 +190,31 @@ class Home extends Component {
                                 </div>
                             </Col>
                             <Col lg={7} md={6}>
-
+                                <h4 className="odio-title">Odio sed id eos et laboriosam consequatur eos earum soluta</h4>
+                                <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
+                                <p className="mt-4"> Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
+                                <ul>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Curabitur feugiat ut risus eget condimentum. Etiam quis diam et metus aliquam euismod.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Ut euismod blandit metus nec semper. In dapibus, odio eu eleifend finibus, nunc lacus tristique eros, vitae imperdiet nisi nunc nec lectus. Fusce malesuada congue dictum.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Nulla sit amet nulla hendrerit, tristique risus quis, maximus enim. Fusce malesuada, dui et dapibus rutrum, nibh enim tristique leo, eu molestie metus odio at ante.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
+                                    </li>
+                                </ul>
                             </Col>
                         </Row>
                     </Container>
