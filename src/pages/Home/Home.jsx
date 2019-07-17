@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap';
 import './Home.css';
+import WOW from 'wowjs';
 
 class Home extends Component {
+    componentDidMount() {
+        new WOW.WOW().init();
+    }
+
     render() {
         return (
             <main className="home">
@@ -220,6 +225,22 @@ class Home extends Component {
                     </Container>
                 </section>
                 {/* /odio */}
+
+                {/* action */}
+                <section className="section action">
+                    <Container>
+                        <Row>
+                            <Col xs={12} lg={9}>
+                                <h3 className="action-title">Necessitatibus enim sequi quasi aperiam</h3>
+                                <p className="action-text">Velit facilis obcaecati sequi nemo labore? Blanditiis possimus odio assumenda est voluptate placeat fugit repellat necessitatibus enim sequi quasi aperiam, sunt non, vitae dolor commodi cupiditate rem. Laborum, asperiores. Autem nostrum quas pariatur architecto tempora consequuntur ipsa totam.</p>
+                            </Col>
+                            <Col xs={12} lg={3} className="d-flex justify-content-center justify-content-lg-end align-items-center">
+                                <a href="#" className="action-btn">Call To Action</a>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /action */}
             </main >
         );
     }

@@ -118,3 +118,26 @@
     color: #007bff;
     font-size: 25px;
 }
+
+.action {
+    background: #007bff;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.action-btn {
+    text-transform: capitalize;
+    background: transparent;
+    border: 2px solid #ffff;
+    padding: 15px 25px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.action-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #0069d9;
+
+}

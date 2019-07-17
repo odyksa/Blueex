@@ -14,10 +14,10 @@ class CustomNavbar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className="ml-auto">
-                            <Nav.Link to="/" as={Link} className="nav-link text-uppercase">Home</Nav.Link>
-                            <Nav.Link to="/about" as={Link} className="nav-link text-uppercase">About</Nav.Link>
-                            <Nav.Link to="/news" as={Link} className="nav-link text-uppercase">News</Nav.Link>
-                            <Nav.Link to="/faq" as={Link} className="nav-link text-uppercase">FAQ</Nav.Link>
+                            <Nav.Link to="/" as={Link} className="text-uppercase">Home</Nav.Link>
+                            <Nav.Link to="/about" as={Link} className="text-uppercase">About</Nav.Link>
+                            <Nav.Link to="/news" as={Link} className="text-uppercase">News</Nav.Link>
+                            <Nav.Link to="/faq" as={Link} className="text-uppercase">FAQ</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
