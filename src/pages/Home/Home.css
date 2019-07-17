@@ -139,5 +139,8 @@
     text-decoration: none;
     color: #fff;
     background: #0069d9;
+}
 
+.projects img {
+    max-width: 100%;
 }

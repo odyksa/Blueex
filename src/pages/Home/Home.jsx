@@ -35,7 +35,7 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our team</h3>
                     <Container>
                         <Row className="text-center">
-                            <Col xs={12} sm={4} className="person">
+                            <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200">
                                 <Image roundedCircle src="assets/person-1.jpg" fluid />
                                 <h4 className="person-name mt-3">Frank Duval</h4>
                                 <p className="person-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
@@ -51,7 +51,7 @@ class Home extends Component {
                                     </a>
                                 </div>
                             </Col>
-                            <Col xs={12} sm={4} className="person">
+                            <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200" data-wow-delay=".3s">
                                 <Image roundedCircle src="assets/person-2.jpg" fluid />
                                 <h4 className="person-name mt-3">Oswald Retenburg</h4>
                                 <p className="person-text">Mauris et quam dolor. Nulla ut posuere metus. Aenean id nisl eu velit semper accumsan. In nec varius leo. Praesent aliquet turpis vitae tortor lobortis pretium.</p>
@@ -67,7 +67,7 @@ class Home extends Component {
                                     </a>
                                 </div>
                             </Col>
-                            <Col xs={12} sm={4} className="person">
+                            <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200" data-wow-delay="0.6s">
                                 <Image roundedCircle src="assets/person-3.jpg" fluid />
                                 <h4 className="person-name mt-3">Peter Jackson</h4>
                                 <p className="person-text">Aliquam erat volutpat. Suspendisse vehicula a purus vel blandit. Sed erat nulla, eleifend in sem nec, luctus commodo dolor. Nunc finibus, turpis non bibendum iaculis.</p>
@@ -135,28 +135,28 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Quis convallis</h4>
                                 <p className="advantage-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-caret-square-o-down" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Amet consectetur adipisicing</h4>
                                 <p className="advantage-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa earum repellendus molestias esse labore rem sequi. Ab, quos itaque!</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="300">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-tachometer" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Molestiae non officiis</h4>
                                 <p className="advantage-text">Quod magni at corporis molestiae non officiis commodi dignissimos odit obcaecati consectetur a dicta sequi. Qui ad repudiandae, architecto libero optio deleniti?</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="300">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-calendar-minus-o" aria-hidden="true"></i>
                                 </div>
@@ -188,7 +188,7 @@ class Home extends Component {
                 <section className="section odio">
                     <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
                     <Container>
-                        <Row>
+                        <Row className="wow bounceInUp" data-wow-offset="200">
                             <Col lg={5} md={6}>
                                 <div className="odio-img">
                                     <Image src="assets/odio.jpg" />
@@ -241,6 +241,34 @@ class Home extends Component {
                     </Container>
                 </section>
                 {/* /action */}
+
+                {/* projects */}
+                <section className="section projects">
+                    <h3 className="text-center section-title section-title-border">Recently Projects</h3>
+                    <Container>
+                        <Row className="wow zoomIn" data-wow-offset="200">
+                            <Col lg={6}>
+                                <Image src="assets/project-1.jpg" />
+                            </Col>
+                            <Col lg={6}>
+                                <h4 className="projects-title">Sed id eos et laboriosam consequatur</h4>
+                                <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
+                                <p className="mt-4"> Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
+                            </Col>
+                        </Row>
+                        <Row className="wow zoomIn mt-5" data-wow-offset="200">
+                            <Col lg={6} className="order-2">
+                                <Image src="assets/project-2.jpg" />
+                            </Col>
+                            <Col lg={6} className="order-1">
+                                <h4 className="projects-title">Molestias illo incidunt deleniti nostrum neque</h4>
+                                <p className="mt-4">Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
+                                <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /projects */}
             </main >
         );
     }
