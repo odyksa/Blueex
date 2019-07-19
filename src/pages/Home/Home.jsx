@@ -38,6 +38,48 @@ class Home extends Component {
                 </section>
                 {/* /jumbotron */}
 
+                {/* odio */}
+                < section className="section odio" >
+                    <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
+                    <Container>
+                        <Row className="wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">
+                            <Col lg={5} md={6}>
+                                <div className="odio-img">
+                                    <Image src="assets/odio.jpg" />
+                                </div>
+                            </Col>
+                            <Col lg={7} md={6}>
+                                <h4 className="odio-title">Odio sed id eos et laboriosam consequatur eos earum soluta</h4>
+                                <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
+                                <p className="mt-4"> Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
+                                <ul>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Curabitur feugiat ut risus eget condimentum. Etiam quis diam et metus aliquam euismod.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Ut euismod blandit metus nec semper. In dapibus, odio eu eleifend finibus, nunc lacus tristique eros, vitae imperdiet nisi nunc nec lectus. Fusce malesuada congue dictum.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Nulla sit amet nulla hendrerit, tristique risus quis, maximus enim. Fusce malesuada, dui et dapibus rutrum, nibh enim tristique leo, eu molestie metus odio at ante.
+                                    </li>
+                                    <li className="mt-3">
+                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
+                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
+                                    </li>
+                                </ul>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section >
+                {/* /odio */}
+
                 {/* team */}
                 < section className="section team" >
                     <h3 className="text-center section-title section-title-border">Our team</h3>
@@ -179,64 +221,6 @@ class Home extends Component {
                 </section >
                 {/* /advantages */}
 
-                {/* subscribe */}
-                < section className="section subscribe" >
-                    <h3 className="text-center section-title">Subscribe to the newsletter for more updates</h3>
-                    <Container>
-                        <Row>
-                            <Col lg={{ span: 8, offset: 2 }} >
-                                <form action="" className="subscribe-form d-flex justify-content-center lg-10">
-                                    <input type="email" name="email" placeholder="Your email adress" className="subscribe-form-email" />
-                                    <button type="submit" className="subscribe-form-btn">Send</button>
-                                </form>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section >
-                {/* /subscribe */}
-
-                {/* odio */}
-                < section className="section odio" >
-                    <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
-                    <Container>
-                        <Row className="wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                            <Col lg={5} md={6}>
-                                <div className="odio-img">
-                                    <Image src="assets/odio.jpg" />
-                                </div>
-                            </Col>
-                            <Col lg={7} md={6}>
-                                <h4 className="odio-title">Odio sed id eos et laboriosam consequatur eos earum soluta</h4>
-                                <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
-                                <p className="mt-4"> Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
-                                <ul>
-                                    <li className="mt-3">
-                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
-                                        Curabitur feugiat ut risus eget condimentum. Etiam quis diam et metus aliquam euismod.
-                                    </li>
-                                    <li className="mt-3">
-                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
-                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
-                                    </li>
-                                    <li className="mt-3">
-                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
-                                        Ut euismod blandit metus nec semper. In dapibus, odio eu eleifend finibus, nunc lacus tristique eros, vitae imperdiet nisi nunc nec lectus. Fusce malesuada congue dictum.
-                                    </li>
-                                    <li className="mt-3">
-                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
-                                        Nulla sit amet nulla hendrerit, tristique risus quis, maximus enim. Fusce malesuada, dui et dapibus rutrum, nibh enim tristique leo, eu molestie metus odio at ante.
-                                    </li>
-                                    <li className="mt-3">
-                                        <i className="fa fa-check-square-o mr-2" aria-hidden="true"></i>
-                                        Suspendisse ac dui sem. Duis tempor elit ante, sed euismod nisl ultrices eget. Orci varius natoque penatibus et magnis dis parturient montes.
-                                    </li>
-                                </ul>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section >
-                {/* /odio */}
-
                 {/* action */}
                 < section className="section action" >
                     <Container>
@@ -246,7 +230,7 @@ class Home extends Component {
                                 <p className="action-text">Velit facilis obcaecati sequi nemo labore? Blanditiis possimus odio assumenda est voluptate placeat fugit repellat necessitatibus enim sequi quasi aperiam, sunt non, vitae dolor commodi cupiditate rem. Laborum, asperiores. Autem nostrum quas pariatur architecto tempora consequuntur ipsa totam.</p>
                             </Col>
                             <Col xs={12} lg={3} className="d-flex justify-content-center justify-content-lg-end align-items-center">
-                                <a href="#" className="action-btn wow shake">Call To Action</a>
+                                <a href="#" className="action-btn">Call To Action</a>
                             </Col>
                         </Row>
                     </Container>
@@ -280,32 +264,6 @@ class Home extends Component {
                     </Container>
                 </section >
                 {/* /projects */}
-
-                {/* facts */}
-                <section className="section facts">
-                    <h3 className="text-center section-title section-title-border">Facts about us</h3>
-                    <Container>
-                        <Row className="wow heartBeat" data-wow-offset="100">
-                            <Col lg={3} xs={6} className="text-center facts-item">
-                                <span className="facts-value">340</span>
-                                <p>Clients</p>
-                            </Col>
-                            <Col lg={3} xs={6} className="text-center facts-item">
-                                <span className="facts-value">75</span>
-                                <p>Projects</p>
-                            </Col>
-                            <Col lg={3} xs={6} className="text-center facts-item">
-                                <span className="facts-value">6</span>
-                                <p>Offices</p>
-                            </Col>
-                            <Col lg={3} xs={6} className="text-center facts-item">
-                                <span className="facts-value">140</span>
-                                <p>Workers</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
-                {/* /facts */}
 
                 {/* portfolio */}
                 <section className="section portfolio">
@@ -403,6 +361,85 @@ class Home extends Component {
                 </section>
                 {/* /portfolio */}
 
+                {/* facts */}
+                <section className="section facts">
+                    <h3 className="text-center section-title section-title-border">Facts about us</h3>
+                    <Container>
+                        <Row className="wow heartBeat" data-wow-offset="200">
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">340</span>
+                                <p>Clients</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">75</span>
+                                <p>Projects</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">6</span>
+                                <p>Offices</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">140</span>
+                                <p>Workers</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /facts */}
+
+                {/* subscribe */}
+                < section className="section subscribe" >
+                    <h3 className="text-center section-title">Subscribe to the newsletter for more updates</h3>
+                    <Container>
+                        <Row>
+                            <Col lg={{ span: 8, offset: 2 }} >
+                                <form action="" className="subscribe-form d-flex justify-content-center lg-10">
+                                    <input type="email" name="email" placeholder="Your email adress" className="subscribe-form-email" />
+                                    <button type="submit" className="subscribe-form-btn">Send</button>
+                                </form>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section >
+                {/* /subscribe */}
+
+                {/* contact */}
+                <section className="section contact">
+                    <h3 className="text-center section-title section-title-border">Contact us</h3>
+                    <Container>
+                        <Row>
+                            <Col md={4} xs={12}>
+                                <div className="contact-item text-center wow slideInUp">
+                                    <i className="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p className="contact-title text-uppercase mt-3">ADDRESS</p>
+                                    <p className="contact-text">A108 Adam Street, NY 535022, US</p>
+                                </div>
+                            </Col>
+                            <Col md={4} xs={12}>
+                                <div className="contact-item contact-item-phone text-center wow slideInUp">
+                                    <i className="fa fa-phone" aria-hidden="true"></i>
+                                    <p className="contact-title text-uppercase mt-3">Phone Number</p>
+                                    <p className="contact-text">+1 5589 55488 55</p>
+                                </div>
+                            </Col>
+                            <Col md={4} xs={12}>
+                                <div className="contact-item contact-item-email text-center wow slideInUp">
+                                    <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <p className="contact-title text-uppercase mt-3">Email</p>
+                                    <p className="contact-text">
+                                        <a href="mailto:blueex.com">office@blueex.com</a>
+                                    </p>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="mt-4">
+                            <Col>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.896430877538!2d-73.99079092136607!3d40.69827857701043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62e24eacc2d0fc67!2svcaqua!5e0!3m2!1sru!2sua!4v1563540883707!5m2!1sru!2sua" style={{width: '100%', height: '450px',  frameBorder: '0px', border: '0px'}}  allowFullScreen></iframe>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /contact */}
 
             </main >
         );

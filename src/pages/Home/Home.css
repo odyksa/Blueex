@@ -206,3 +206,25 @@
     z-index: 20;
     padding: 20px;
 }
+
+.contact-title {
+    font-size: 20px;
+}
+
+.contact-item .fa {
+    font-size: 30px;
+    color: #007bff;
+}
+
+@media (min-width: 768px) {
+    .contact-item-phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+.contact-item-email a {
+    color: #000000;
+    text-decoration: none;
+}
+
