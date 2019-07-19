@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap';
-import './Home.css';
 import WOW from 'wowjs';
+import './Home.css';
 
 class Home extends Component {
+    state = {
+        isCount: false
+    };
+
     componentDidMount() {
         new WOW.WOW().init();
     }
 
     render() {
         return (
-            <main className="home">
-                <Image src="assets/home-bg.jpg" fluid className="mb-4 zoom" />
+            <main className="home" >
+                {/* intro */}
+                <section className="section intro">
+
+                </section>
+                {/* /intro */}
 
                 {/* jumbotron */}
-                <section className="section jumbotron-wrap">
+                <section className="section jumbotron-wrap" >
                     <Container>
                         <Jumbotron>
                             <hgroup>
@@ -31,13 +39,14 @@ class Home extends Component {
                 {/* /jumbotron */}
 
                 {/* team */}
-                <section className="section team">
+                < section className="section team" >
                     <h3 className="text-center section-title section-title-border">Our team</h3>
                     <Container>
                         <Row className="text-center">
                             <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200">
                                 <Image roundedCircle src="assets/person-1.jpg" fluid />
                                 <h4 className="person-name mt-3">Frank Duval</h4>
+                                <p className="person-position font-italic">Chief Executive Officer</p>
                                 <p className="person-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
                                 <div className="person-social-links text-center">
                                     <a href="#">
@@ -54,6 +63,7 @@ class Home extends Component {
                             <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200" data-wow-delay=".3s">
                                 <Image roundedCircle src="assets/person-2.jpg" fluid />
                                 <h4 className="person-name mt-3">Oswald Retenburg</h4>
+                                <p className="person-position font-italic">CTO</p>
                                 <p className="person-text">Mauris et quam dolor. Nulla ut posuere metus. Aenean id nisl eu velit semper accumsan. In nec varius leo. Praesent aliquet turpis vitae tortor lobortis pretium.</p>
                                 <div className="person-social-links text-center">
                                     <a href="#">
@@ -70,6 +80,7 @@ class Home extends Component {
                             <Col xs={12} sm={4} className="person wow slideInUp" data-wow-offset="200" data-wow-delay="0.6s">
                                 <Image roundedCircle src="assets/person-3.jpg" fluid />
                                 <h4 className="person-name mt-3">Peter Jackson</h4>
+                                <p className="person-position font-italic">Accountant</p>
                                 <p className="person-text">Aliquam erat volutpat. Suspendisse vehicula a purus vel blandit. Sed erat nulla, eleifend in sem nec, luctus commodo dolor. Nunc finibus, turpis non bibendum iaculis.</p>
                                 <div className="person-social-links text-center">
                                     <a href="#">
@@ -85,11 +96,11 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /team */}
 
                 {/* carousel */}
-                <section className="section carousel-wrap">
+                < section className="section carousel-wrap" >
                     <Carousel>
                         <Carousel.Item>
                             <img
@@ -127,11 +138,11 @@ class Home extends Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
-                </section>
+                </section >
                 {/* /carousel */}
 
                 {/* advantages */}
-                <section className="section advantages">
+                < section className="section advantages" >
                     <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
@@ -165,11 +176,11 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /advantages */}
 
                 {/* subscribe */}
-                <section className="section subscribe">
+                < section className="section subscribe" >
                     <h3 className="text-center section-title">Subscribe to the newsletter for more updates</h3>
                     <Container>
                         <Row>
@@ -181,14 +192,14 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /subscribe */}
 
                 {/* odio */}
-                <section className="section odio">
+                < section className="section odio" >
                     <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
                     <Container>
-                        <Row className="wow bounceInUp" data-wow-offset="200">
+                        <Row className="wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">
                             <Col lg={5} md={6}>
                                 <div className="odio-img">
                                     <Image src="assets/odio.jpg" />
@@ -223,11 +234,11 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /odio */}
 
                 {/* action */}
-                <section className="section action">
+                < section className="section action" >
                     <Container>
                         <Row>
                             <Col xs={12} lg={9}>
@@ -235,40 +246,164 @@ class Home extends Component {
                                 <p className="action-text">Velit facilis obcaecati sequi nemo labore? Blanditiis possimus odio assumenda est voluptate placeat fugit repellat necessitatibus enim sequi quasi aperiam, sunt non, vitae dolor commodi cupiditate rem. Laborum, asperiores. Autem nostrum quas pariatur architecto tempora consequuntur ipsa totam.</p>
                             </Col>
                             <Col xs={12} lg={3} className="d-flex justify-content-center justify-content-lg-end align-items-center">
-                                <a href="#" className="action-btn">Call To Action</a>
+                                <a href="#" className="action-btn wow shake">Call To Action</a>
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /action */}
 
                 {/* projects */}
-                <section className="section projects">
+                < section className="section projects" >
                     <h3 className="text-center section-title section-title-border">Recently Projects</h3>
                     <Container>
                         <Row className="wow zoomIn" data-wow-offset="200">
                             <Col lg={6}>
-                                <Image src="assets/project-1.jpg" />
+                                <Image src="assets/project-1.jpg" className="img-fluid projects-img" />
                             </Col>
                             <Col lg={6}>
-                                <h4 className="projects-title">Sed id eos et laboriosam consequatur</h4>
+                                <h4 className="projects-title mt-4 mt-lg-0">Sed id eos et laboriosam consequatur</h4>
                                 <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
                                 <p className="mt-4"> Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
                             </Col>
                         </Row>
-                        <Row className="wow zoomIn mt-5" data-wow-offset="200">
-                            <Col lg={6} className="order-2">
-                                <Image src="assets/project-2.jpg" />
+                        <Row className="wow zoomIn mt-lg-5" data-wow-offset="200">
+                            <Col lg={6} className="order-lg-2">
+                                <Image src="assets/project-2.jpg" className="img-fluid projects-img" />
                             </Col>
-                            <Col lg={6} className="order-1">
-                                <h4 className="projects-title">Molestias illo incidunt deleniti nostrum neque</h4>
+                            <Col lg={6} className="order-lg-1">
+                                <h4 className="projects-title mt-4 mt-lg-0">Molestias illo incidunt deleniti nostrum neque</h4>
                                 <p className="mt-4">Incidunt eveniet, labore quas adipisicing elit. Accusantium ex provident sed ad molestiae esse alias, fugiat explicabo laudantium odio cumque quidem tempora deleniti cum!</p>
                                 <p className="mt-4">Recusandae atque et quod obcaecati consectetur commodi minus nam quidem voluptatem exercitationem corporis molestias illo incidunt deleniti nostrum neque veniam, magni nesciunt quisquam sapiente iste explicabo quis quae officia.</p>
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section >
                 {/* /projects */}
+
+                {/* facts */}
+                <section className="section facts">
+                    <h3 className="text-center section-title section-title-border">Facts about us</h3>
+                    <Container>
+                        <Row className="wow heartBeat" data-wow-offset="100">
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">340</span>
+                                <p>Clients</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">75</span>
+                                <p>Projects</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">6</span>
+                                <p>Offices</p>
+                            </Col>
+                            <Col lg={3} xs={6} className="text-center facts-item">
+                                <span className="facts-value">140</span>
+                                <p>Workers</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                {/* /facts */}
+
+                {/* portfolio */}
+                <section className="section portfolio">
+                    <h3 className="text-center section-title section-title-border">Our portfolio</h3>
+                    <Row className="no-gutters">
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-1.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Esse sint doloribus</h4>
+                                        <p className="portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-2.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Morbi in pellentesque nisi</h4>
+                                        <p className="portfolio-text">Quisque magna arcu, elementum convallis maximus ac</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-3.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Ut nunc felis, sagittis ac</h4>
+                                        <p className="portfolio-text">Phasellus laoreet, justo eu ultricies lacinia</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-4.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Suspendisse scelerisque</h4>
+                                        <p className="portfolio-text">Nulla auctor sodales augue a posuere</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-5.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Donec bibendum leo non enim congue</h4>
+                                        <p className="portfolio-text">Donec bibendum leo non enim congue finibus</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-6.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Duis justo lectus, euismod vel</h4>
+                                        <p className="portfolio-text">Nam turpis neque, iaculis in nisl vel, malesuada facilisis purus</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-7.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Esse sint doloribus</h4>
+                                        <p className="portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                        <Col lg={3} sm={6} xs={12}>
+                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                                <a href="" className="portfolio-link">
+                                    <Image src="assets/portfolio-item-8.jpg" className="img-fluid" />
+                                    <div className="portfolio-description text-center">
+                                        <h4 className="portfolio-title text-uppercase">Quisque magna arcu, elementum convallis</h4>
+                                        <p className="portfolio-text">Phasellus laoreet, justo eu ultricies lacinia</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </Col>
+                    </Row>
+                </section>
+                {/* /portfolio */}
+
+
             </main >
         );
     }

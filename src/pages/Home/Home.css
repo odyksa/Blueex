@@ -1,3 +1,9 @@
+.intro {
+    background: url('../../images/home-bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 855px;
+}
+
 .jumbotron-subtitle {
     color: #5e5b60f2;
 }
@@ -9,29 +15,31 @@
 }
 
 .advantage-item {
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     position: relative;
+    transform: scale(1);
 }
 
 .advantage-item:after {
     content: '';
     position: absolute;
     display: block;
-    width: 100%;
+    left: 0;
+    width: 0%;
     height: 2px;
     background: #007bff;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .advantage-item:hover {
-    opacity: 0.65;
     color: #007bff;
+    transform: scale(1.03);
 }
 
 .advantage-item:hover:after {
     opacity: 1;
-    
+    width: 100%;
 }
 
 .advantage-item-icon .fa {
@@ -141,6 +149,60 @@
     background: #0069d9;
 }
 
-.projects img {
-    max-width: 100%;
+.projects-img {
+    transition: opacity 0.5s ease-out;
+}
+.projects-img:hover {
+    opacity: 0.65;
+}
+
+.facts-value {
+    font-size: 45px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:after {
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    background: #000000;
+    opacity: 0.3;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.portfolio-item:hover:after {
+    opacity: 0.7;
+}
+
+.portfolio-description {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    padding: 20px;
 }
