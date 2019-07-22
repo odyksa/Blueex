@@ -4,14 +4,18 @@
     height: 855px;
 }
 
-.jumbotron-subtitle {
-    color: #5e5b60f2;
-}
 .person img {
     transition: opacity 0.5s ease-out;
 }
 .person img:hover {
     opacity: 0.65;
+}
+
+.person-social-links .fa {
+    transition-duration: 0.3s;
+}
+.person-social-links a:hover .fa {
+    transform: scale(1.45);
 }
 
 .advantage-item {
