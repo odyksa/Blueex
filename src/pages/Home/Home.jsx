@@ -2,51 +2,47 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap';
 import WOW from 'wowjs';
+import scrollToComponent from 'react-scroll-to-component';
 import FeedbacksCarousel from '../../components/FeedbacksCarousel';
+import ClientsCarousel from '../../components/ClientsCarousel';
 
 import './Home.css';
 
 class Home extends Component {
     componentDidMount() {
+        // init WOW.JS
         new WOW.WOW().init();
     }
-    
+
 
     render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-          };
-
         return (
             <main className="home" >
                 {/* intro */}
                 <section className="section intro">
-
+                    <hgroup>
+                        <h1 className="text-uppercase mb-4">Welcome to Altmetric Co</h1>
+                        <h2 className="jumbotron-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore excepturi nesciunt repellat, atque at tenetur.</h2>
+                    </hgroup>
+                    <Button
+                        variant="primary"
+                        className="mt-2"
+                        onClick={() => scrollToComponent(this.odio, { offset: 0, align: 'top', duration: 2000, ease: 'inOutExpo' })}
+                    >
+                        Get Started
+                        </Button>
+                    <Button
+                        variant="primary"
+                        className="mt-2"
+                        onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1000, ease: 'inOutExpo' })}
+                    >
+                        Contact Us
+                        </Button>
                 </section>
                 {/* /intro */}
 
-                {/* jumbotron */}
-                <section className="section jumbotron-wrap" >
-                    <Container>
-                        <Jumbotron>
-                            <hgroup>
-                                <h1 className="text-uppercase mb-4">Welcome to Altmetric Co</h1>
-                                <h2 className="jumbotron-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore excepturi nesciunt repellat, atque at tenetur.</h2>
-                            </hgroup>
-                            <Link to="/about">
-                                <Button variant="primary" className="mt-2">About</Button>
-                            </Link>
-                        </Jumbotron>
-                    </Container>
-                </section>
-                {/* /jumbotron */}
-
                 {/* odio */}
-                < section className="section odio" >
+                < section className="section odio" ref={section => { this.odio = section }}>
                     <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
                     <Container>
                         <Row className="wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">
@@ -244,6 +240,13 @@ class Home extends Component {
                 </section >
                 {/* /action */}
 
+                {/* clients */}
+                <section className="section clients">
+                    <h3 className="text-center section-title section-title-border">Clients</h3>
+                    <ClientsCarousel />
+                </section>
+                {/* /clients */}
+
                 {/* projects */}
                 < section className="section projects" >
                     <h3 className="text-center section-title section-title-border">Recently Projects</h3>
@@ -372,7 +375,7 @@ class Home extends Component {
                 <section className="section facts">
                     <h3 className="text-center section-title section-title-border">Facts about us</h3>
                     <Container>
-                        <Row className="wow heartBeat" data-wow-offset="200">
+                        <Row className="wow heartBeat" data-wow-offset="300">
                             <Col lg={3} xs={6} className="text-center facts-item">
                                 <span className="facts-value">340</span>
                                 <p>Clients</p>
@@ -418,7 +421,7 @@ class Home extends Component {
                 {/* /feedbacks */}
 
                 {/* contact */}
-                <section className="section contact">
+                <section className="section contact" ref={section => { this.contact = section }}>
                     <h3 className="text-center section-title section-title-border">Contact us</h3>
                     <Container>
                         <Row>
@@ -454,7 +457,6 @@ class Home extends Component {
                     </Container>
                 </section>
                 {/* /contact */}
-
             </main >
         );
     }

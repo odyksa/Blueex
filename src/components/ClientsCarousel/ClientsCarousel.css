@@ -1,0 +1,14 @@
+.client-item-img {
+    max-width: 80%;
+    opacity: 0.4;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.client-item-img:hover {
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007bff;
+}
