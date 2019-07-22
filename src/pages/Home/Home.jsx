@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap';
 import WOW from 'wowjs';
+import FeedbacksCarousel from '../../components/FeedbacksCarousel';
+
 import './Home.css';
 
 class Home extends Component {
-    state = {
-        isCount: false
-    };
-
     componentDidMount() {
         new WOW.WOW().init();
     }
+    
 
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          };
+
         return (
             <main className="home" >
                 {/* intro */}
@@ -188,7 +195,7 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="200">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 </div>
@@ -270,7 +277,7 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our portfolio</h3>
                     <Row className="no-gutters">
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-1.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -281,7 +288,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-2.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -292,7 +299,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-3.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -303,7 +310,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-4.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -314,7 +321,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-5.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -325,7 +332,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-6.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -336,7 +343,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-7.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -347,7 +354,7 @@ class Home extends Component {
                             </div>
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
-                            <div className="portfolio-item wow rollIn" data-wow-offset="300">
+                            <div className="portfolio-item wow rollIn" data-wow-offset="200">
                                 <a href="" className="portfolio-link">
                                     <Image src="assets/portfolio-item-8.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
@@ -403,6 +410,13 @@ class Home extends Component {
                 </section >
                 {/* /subscribe */}
 
+                {/* feedbacks */}
+                <section className="section feedbacks">
+                    <h3 className="text-center section-title section-title-border">Feedbacks</h3>
+                    <FeedbacksCarousel />
+                </section>
+                {/* /feedbacks */}
+
                 {/* contact */}
                 <section className="section contact">
                     <h3 className="text-center section-title section-title-border">Contact us</h3>
@@ -433,8 +447,8 @@ class Home extends Component {
                             </Col>
                         </Row>
                         <Row className="mt-4">
-                            <Col>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.896430877538!2d-73.99079092136607!3d40.69827857701043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62e24eacc2d0fc67!2svcaqua!5e0!3m2!1sru!2sua!4v1563540883707!5m2!1sru!2sua" style={{width: '100%', height: '450px',  frameBorder: '0px', border: '0px'}}  allowFullScreen></iframe>
+                            <Col className="wow slideInUp">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.896430877538!2d-73.99079092136607!3d40.69827857701043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62e24eacc2d0fc67!2svcaqua!5e0!3m2!1sru!2sua!4v1563540883707!5m2!1sru!2sua" style={{ width: '100%', height: '450px', frameBorder: '0px', border: '0px' }} allowFullScreen></iframe>
                             </Col>
                         </Row>
                     </Container>

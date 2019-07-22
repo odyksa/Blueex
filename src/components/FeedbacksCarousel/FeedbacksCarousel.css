@@ -1,0 +1,30 @@
+.feedbacks-carousel-item {
+    padding: 15px;
+}
+
+.feedbacks-carousel-item-img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: border 0.4s ease-in-out;
+}
+
+.feedbacks-carousel-item:hover .feedbacks-carousel-item-img {
+    border: 3px solid #007bff;
+}
+
+.feedbacks-carousel-item-img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.feedbacks-carousel-item-text .fa {
+    color: #007bff;
+}
+
+.fa-quote-left {
+    margin-right: 5px;
+}
+
+.fa-quote-right {
+    margin-left: 5px;
+}
