@@ -13,7 +13,7 @@ class ClientsCarousel extends Component {
             speed: 800,
             slidesToShow: 4,
             slidesToScroll: 4,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 6000,
             cssEase: "ease-in-out",
             initialSlide: 0,

@@ -8,6 +8,7 @@ class About extends Component {
     render() {
         return (
             <main className="about">
+                <section className="section">
                 <Container>
                     <Row>
                         <Col>
@@ -15,6 +16,7 @@ class About extends Component {
                         </Col>
                     </Row>
                 </Container>
+                </section>
             </main>
         );
     }

@@ -117,6 +117,7 @@
 }
 
 .subscribe-form-btn {
+    text-transform: uppercase;
     padding: 20px 30px;
     border: none;
     outline: none;
@@ -204,9 +205,10 @@
 }
 
 .action-btn {
-    text-transform: capitalize;
+    text-transform: uppercase;
     background: transparent;
     border: 2px solid #ffff;
+    border-radius: 42px;
     padding: 15px 25px;
     color: #fff;
     transition: all 0.5s ease-in-out;
@@ -214,6 +216,7 @@
 }
 
 .action-btn:hover {
+    border-color: #0069d9;
     text-decoration: none;
     color: #fff;
     background: #0069d9;
