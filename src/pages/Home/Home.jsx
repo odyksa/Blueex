@@ -98,13 +98,13 @@ class Home extends Component {
                                 <p className="person-position font-italic">Chief Executive Officer</p>
                                 <p className="person-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
                                 <div className="person-social-links text-center">
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-facebook-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#" className="ml-2 mr-2">
+                                    <a href="/" className="ml-2 mr-2">
                                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-twitter-square" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -115,13 +115,13 @@ class Home extends Component {
                                 <p className="person-position font-italic">CTO</p>
                                 <p className="person-text">Mauris et quam dolor. Nulla ut posuere metus. Aenean id nisl eu velit semper accumsan. In nec varius leo. Praesent aliquet turpis vitae tortor lobortis pretium.</p>
                                 <div className="person-social-links text-center">
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-facebook-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#" className="ml-2 mr-2">
+                                    <a href="/" className="ml-2 mr-2">
                                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-twitter-square" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -132,13 +132,13 @@ class Home extends Component {
                                 <p className="person-position font-italic">Accountant</p>
                                 <p className="person-text">Aliquam erat volutpat. Suspendisse vehicula a purus vel blandit. Sed erat nulla, eleifend in sem nec, luctus commodo dolor. Nunc finibus, turpis non bibendum iaculis.</p>
                                 <div className="person-social-links text-center">
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-facebook-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#" className="ml-2 mr-2">
+                                    <a href="/" className="ml-2 mr-2">
                                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#">
+                                    <a href="/">
                                         <i className="fa fa-twitter-square" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -237,7 +237,7 @@ class Home extends Component {
                                 <p className="action-text">Velit facilis obcaecati sequi nemo labore? Blanditiis possimus odio assumenda est voluptate placeat fugit repellat necessitatibus enim sequi quasi aperiam, sunt non, vitae dolor commodi cupiditate rem. Laborum, asperiores. Autem nostrum quas pariatur architecto tempora consequuntur ipsa totam.</p>
                             </Col>
                             <Col xs={12} lg={3} className="d-flex justify-content-center justify-content-lg-end align-items-center">
-                                <a href="#" className="action-btn">Call To Action</a>
+                                <a href="/" className="action-btn">Call To Action</a>
                             </Col>
                         </Row>
                     </Container>
@@ -291,7 +291,7 @@ class Home extends Component {
                     <Row className="no-gutters">
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-1.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Esse sint doloribus</h4>
@@ -302,7 +302,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-2.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Morbi in pellentesque nisi</h4>
@@ -313,7 +313,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-3.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Ut nunc felis, sagittis ac</h4>
@@ -324,7 +324,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-4.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Suspendisse scelerisque</h4>
@@ -335,7 +335,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-5.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Donec bibendum leo non enim congue</h4>
@@ -346,7 +346,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-6.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Duis justo lectus, euismod vel</h4>
@@ -357,7 +357,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-7.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Esse sint doloribus</h4>
@@ -368,7 +368,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={3} sm={6} xs={12}>
                             <div className="portfolio-item wow rollIn" data-wow-offset="200">
-                                <a href="" className="portfolio-link">
+                                <a href="/" className="portfolio-link">
                                     <Image src="assets/portfolio-item-8.jpg" className="img-fluid" />
                                     <div className="portfolio-description text-center">
                                         <h4 className="portfolio-title text-uppercase">Quisque magna arcu, elementum convallis</h4>
@@ -468,7 +468,7 @@ class Home extends Component {
                         </Row>
                         <Row className="mt-4">
                             <Col className="wow slideInUp">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.896430877538!2d-73.99079092136607!3d40.69827857701043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62e24eacc2d0fc67!2svcaqua!5e0!3m2!1sru!2sua!4v1563540883707!5m2!1sru!2sua" style={{ width: '100%', height: '450px', frameBorder: '0px', border: '0px' }} allowFullScreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.896430877538!2d-73.99079092136607!3d40.69827857701043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62e24eacc2d0fc67!2svcaqua!5e0!3m2!1sru!2sua!4v1563540883707!5m2!1sru!2sua" style={{ width: '100%', height: '450px', frameBorder: '0px', border: '0px' }} allowFullScreen title="google map"></iframe>
                             </Col>
                         </Row>
                     </Container>

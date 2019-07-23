@@ -51,49 +51,49 @@ class ClientsCarousel extends Component {
                     <Col>
                         <Slider {...settings} className="wow slideInLeft">
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-1.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-2.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-3.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-4.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-5.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-6.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-7.png" className="client-item-img"/>
                                 </a>
                             </div>
 
                             <div className="client-item">
-                                <a href="https://www.youtube.com" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                     <Image src="assets/clients/client-8.png" className="client-item-img"/>
                                 </a>
                             </div>
