@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-// import News from './pages/News';
-// import FAQ from './pages/FAQ';
+import News from './pages/News';
+import FAQ from './pages/FAQ';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -18,8 +18,8 @@ class App extends Component {
                     <Switch>
                         <Route path="/" exact component={Home}/>
                         <Route path="/about" component={About}/>
-                        {/* <Route path="/news" component={News}/>
-                        <Route path="/faq" component={FAQ}/> */}
+                        <Route path="/news" component={News}/>
+                        <Route path="/faq" component={FAQ}/>
                     </Switch>
                     <Footer />
                 </div>
