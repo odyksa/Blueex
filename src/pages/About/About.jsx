@@ -8,7 +8,7 @@ class About extends Component {
         return (
             <main className="about" >
                 <section className="section">
-                    <h2 className="text-center section-title section-title-border">About us</h2>
+                    <h2 className="text-center section-title section-title-border">About</h2>
                     <Container>
                         <Row className="mb-5">
                             <Col lg={6}>
