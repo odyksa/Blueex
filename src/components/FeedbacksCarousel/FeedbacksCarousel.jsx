@@ -13,7 +13,7 @@ class FeedbacksCarousel extends Component {
             speed: 800,
             slidesToShow: 4,
             slidesToScroll: 4,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 6000,
             cssEase: "ease-in-out",
             initialSlide: 0,
@@ -47,8 +47,8 @@ class FeedbacksCarousel extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
-                    <Col lg={10}>
+                <Row>
+                    <Col>
                         <Slider {...settings} className="wow slideInUp">
                             <div className="feedbacks-carousel-item">
                                 <div className="feedbacks-carousel-item-img">

@@ -17,7 +17,7 @@ class Home extends Component {
         return (
             <main className="home" >
                 {/* intro */}
-                <section className="section section-no-mt intro parallax">
+                <section className="section section-no-mt intro parallax wow fadeIn">
                     <Container>
                         <Row>
                             <Col lg={{ span: 8, offset: 2 }} className="text-center">
@@ -32,7 +32,7 @@ class Home extends Component {
                                             Get Started
                                         </Button>
                                         <Button
-                                            className="mt-5 ml-2 intro-btn-default"
+                                            className="mt-5 ml-2 intro-btn-default intro-btn-transparent"
                                             onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1000, ease: 'inOutExpo' })}
                                         >
                                             Contact Us
@@ -247,7 +247,13 @@ class Home extends Component {
                 {/* clients */}
                 <section className="section clients">
                     <h3 className="text-center section-title section-title-border">Clients</h3>
-                    <ClientsCarousel />
+                    <Container>
+                        <Row>
+                            <Col>
+                                <ClientsCarousel />
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
                 {/* /clients */}
 
@@ -420,7 +426,14 @@ class Home extends Component {
                 {/* feedbacks */}
                 <section className="section feedbacks">
                     <h3 className="text-center section-title section-title-border">Feedbacks</h3>
-                    <FeedbacksCarousel />
+                    <Container>
+                        <Row>
+                            <Col>
+                                <FeedbacksCarousel />
+                            </Col>
+                        </Row>
+                    </Container>
+                    
                 </section>
                 {/* /feedbacks */}
 

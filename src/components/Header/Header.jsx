@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar, Image } from 'react-bootstrap';
-import './CustomNavbar.css';
+import './Header.css';
 
-class CustomNavbar extends Component {
+class Header extends Component {
     render() {
         return (
             <header className="header">
@@ -28,4 +28,4 @@ class CustomNavbar extends Component {
     }
 }
 
-export default CustomNavbar;
+export default Header;

@@ -47,7 +47,7 @@ class ClientsCarousel extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row>
                     <Col>
                         <Slider {...settings} className="wow slideInLeft">
                             <div className="client-item">
