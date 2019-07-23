@@ -195,7 +195,7 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="200">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 </div>
