@@ -1,9 +1,9 @@
-.jumbotron {
-    background: #c0c0c036;
+.section {
+    margin: 50px 0;
 }
 
-.section {
-    margin: 35px 0 25px 0;
+.section-no-mt {
+    margin-top: 0;
 }
 
 .section-title {

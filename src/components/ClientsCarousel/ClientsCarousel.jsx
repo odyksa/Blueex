@@ -49,7 +49,7 @@ class ClientsCarousel extends Component {
             <Container>
                 <Row className="justify-content-center">
                     <Col>
-                        <Slider {...settings} className="wow slideInUp">
+                        <Slider {...settings} className="wow slideInLeft">
                             <div className="client-item">
                                 <a href="https://www.youtube.com" target="_blank">
                                     <Image src="assets/clients/client-1.png" className="client-item-img"/>

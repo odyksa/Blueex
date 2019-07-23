@@ -1,7 +1,44 @@
 .intro {
     background: url('../../images/home-bg.jpg') no-repeat center;
     background-size: cover;
-    height: 855px;
+    color: #fff;
+    
+}
+
+.parallax { 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-inner {
+    display: flex;
+    height: 90vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.intro-title {
+    font-size: 45px;
+}
+
+.intro-title span {
+    color: #007bff;
+}
+
+.intro-btn-default {
+    padding: 20px 30px;
+    border-radius: 42px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
 }
 
 .person img {
@@ -187,6 +224,7 @@
     bottom: 0;
     position: absolute;
     z-index: 10;
+    background: #111111;
     opacity: 0.3;
     transition: opacity 0.4s ease-in-out;
 }

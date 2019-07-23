@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col, Button, Image, Jumbotron, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image, Carousel } from 'react-bootstrap';
 import WOW from 'wowjs';
 import scrollToComponent from 'react-scroll-to-component';
 import FeedbacksCarousel from '../../components/FeedbacksCarousel';
@@ -14,30 +13,35 @@ class Home extends Component {
         new WOW.WOW().init();
     }
 
-
     render() {
         return (
             <main className="home" >
                 {/* intro */}
-                <section className="section intro">
-                    <hgroup>
-                        <h1 className="text-uppercase mb-4">Welcome to Altmetric Co</h1>
-                        <h2 className="jumbotron-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore excepturi nesciunt repellat, atque at tenetur.</h2>
-                    </hgroup>
-                    <Button
-                        variant="primary"
-                        className="mt-2"
-                        onClick={() => scrollToComponent(this.odio, { offset: 0, align: 'top', duration: 2000, ease: 'inOutExpo' })}
-                    >
-                        Get Started
-                        </Button>
-                    <Button
-                        variant="primary"
-                        className="mt-2"
-                        onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1000, ease: 'inOutExpo' })}
-                    >
-                        Contact Us
-                        </Button>
+                <section className="section section-no-mt intro parallax">
+                    <Container>
+                        <Row>
+                            <Col lg={{ span: 8, offset: 2 }} className="text-center">
+                                <div className="intro-inner">
+                                    <h1 className="intro-title text-uppercase mb-4">Welcome to <span>BlueEx</span></h1>
+                                    <h2>Corporis molestias illo incidunt deleniti nostrum neque</h2>
+                                    <div className="intro-btn-block">
+                                        <Button
+                                            className="mt-5 mr-2 intro-btn-default"
+                                            onClick={() => scrollToComponent(this.odio, { offset: 0, align: 'top', duration: 2000, ease: 'inOutExpo' })}
+                                        >
+                                            Get Started
+                                        </Button>
+                                        <Button
+                                            className="mt-5 ml-2 intro-btn-default"
+                                            onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1000, ease: 'inOutExpo' })}
+                                        >
+                                            Contact Us
+                                        </Button>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
                 {/* /intro */}
 
