@@ -2,6 +2,7 @@
   "name": "codelife",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://odyksa.github.io/blueex",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
