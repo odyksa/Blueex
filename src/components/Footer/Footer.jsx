@@ -17,7 +17,7 @@ class Footer extends Component {
                                 <p className="mt-4">Beatae tenetur, hic eum a nulla amet sequi, dolorum, reiciendis optio maiores modi tempora. Consequatur, ipsam id recusandae magni est nesciunt quae!</p>
                             </Col>
                             <Col lg={2} sm={6} className="footer-top-col">
-                                <h4 className="footer-top-title">Useful Links</h4>
+                                <h4 className="footer-top-title">Navigation</h4>
                                 <ul className="footer-top-list">
                                     <li>
                                         <Link to="/">Home</Link>
