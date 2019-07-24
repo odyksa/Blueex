@@ -39,6 +39,10 @@
     color: #007bff;
 }
 
+.intro-btn-block {
+    margin-top: 45px;
+}
+
 .intro-btn-default {
     padding: 20px 30px;
     border-radius: 42px;
@@ -49,11 +53,16 @@
     cursor: pointer;
     transition-duration: 0.3s;
     text-transform: uppercase;
+    margin: 10px;
 }
 
 .intro-btn-transparent {
     background: transparent;
     border-color: #fff;
+}
+
+.person {
+    margin-bottom: 25px;
 }
 
 .person img {
@@ -69,6 +78,17 @@
 .person-social-links a:hover .fa {
     transform: scale(1.45);
 }
+
+@media (max-width: 400px) {
+    .carousel .carousel-caption h4 {
+        font-size: 16px;
+    }
+
+    .carousel .carousel-caption p {
+        font-size: 12px;
+    }
+}
+
 
 .advantage-item {
     transition: all 0.3s ease-out;
@@ -116,8 +136,15 @@
     border-radius: 42px;
 }
 
+@media (max-width: 500px) {
+    .subscribe-form-email {
+        padding-right: 130px;
+    }
+}
+
 .subscribe-form-btn {
     text-transform: uppercase;
+    text-align: center;
     padding: 20px 30px;
     border: none;
     outline: none;
@@ -129,6 +156,14 @@
     box-sizing: border-box;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .subscribe-form-btn {
+        width: 110px;
+        padding: 20px;
+        margin-left: -110px;
+    }
 }
 
 .subscribe-form-btn:hover {

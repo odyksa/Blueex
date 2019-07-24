@@ -54,7 +54,7 @@ class Footer extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <p>Made with <span className="fa fa-heart" aria-hidden="true"></span> by Alex Dyksa</p>
+                                <p>Made with<span className="fa fa-heart" aria-hidden="true"></span>by Alex Dyksa</p>
                                 <p>© All Rights Reserved</p>
                             </Col>
                         </Row>

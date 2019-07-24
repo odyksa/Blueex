@@ -26,13 +26,13 @@ class Home extends Component {
                                     <h2>Corporis molestias illo incidunt deleniti nostrum neque</h2>
                                     <div className="intro-btn-block">
                                         <Button
-                                            className="mt-5 mr-2 intro-btn-default"
+                                            className="intro-btn-default"
                                             onClick={() => scrollToComponent(this.odio, { offset: 0, align: 'top', duration: 2000, ease: 'inOutExpo' })}
                                         >
                                             Get Started
                                         </Button>
                                         <Button
-                                            className="mt-5 ml-2 intro-btn-default intro-btn-transparent"
+                                            className="intro-btn-default intro-btn-transparent"
                                             onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1000, ease: 'inOutExpo' })}
                                         >
                                             Contact Us
@@ -50,7 +50,7 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Odio sed id eos</h3>
                     <Container>
                         <Row className="wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                            <Col lg={5} md={6}>
+                            <Col lg={5} md={6} className="mb-4">
                                 <div className="odio-img">
                                     <Image src="assets/odio.jpg" />
                                 </div>
@@ -159,7 +159,7 @@ class Home extends Component {
                             />
                             <Carousel.Caption>
                                 <h4>A pharetra augue mollis</h4>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <p>Nulla vitae elit libero, a pharetra augue</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -170,8 +170,8 @@ class Home extends Component {
                             />
 
                             <Carousel.Caption>
-                                <h4>Consectetur adipiscing elit</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4>Consectetur adipiscing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -182,8 +182,8 @@ class Home extends Component {
                             />
 
                             <Carousel.Caption>
-                                <h4>Vel scelerisque nisl consectetur</h4>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h4>Vel scelerisque nisl</h4>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
