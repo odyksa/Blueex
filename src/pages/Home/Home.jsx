@@ -195,28 +195,31 @@ class Home extends Component {
                     <h3 className="text-center section-title section-title-border">Our advantages</h3>
                     <Container>
                         <Row className="text-center">
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="200">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Quis convallis</h4>
                                 <p className="advantage-text">Nam accumsan malesuada odio id suscipit. Aliquam aliquet interdum elit, quis convallis sem finibus ac. Mauris ullamcorper placerat dui, in fringilla dui tincidunt et.</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="300">
+
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInLeft" data-wow-offset="200">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-caret-square-o-down" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Amet consectetur adipisicing</h4>
                                 <p className="advantage-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa earum repellendus molestias esse labore rem sequi. Ab, quos itaque!</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="300">
+
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="200">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-tachometer" aria-hidden="true"></i>
                                 </div>
                                 <h4 className="advantage-name mt-3">Molestiae non officiis</h4>
                                 <p className="advantage-text">Quod magni at corporis molestiae non officiis commodi dignissimos odit obcaecati consectetur a dicta sequi. Qui ad repudiandae, architecto libero optio deleniti?</p>
                             </Col>
-                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="300">
+
+                            <Col xs={12} sm={6} lg={3} className="advantage-item text-center wow slideInRight" data-wow-offset="200">
                                 <div className="advantage-item-icon">
                                     <i className="fa fa-calendar-minus-o" aria-hidden="true"></i>
                                 </div>
